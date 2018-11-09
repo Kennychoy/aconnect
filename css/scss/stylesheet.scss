@@ -494,6 +494,7 @@
 							justify-content: center;
 							&:first-of-type {
 								.core-content {
+									position: relative;
 									.core-desc {}
 									.core-bottom {
 										&:before {
@@ -509,10 +510,76 @@
 											top: -450%;
 										}
 									}
+									&:first-of-type {
+										&:before {
+											position: absolute;
+											content: "";
+											right: -16%;
+											bottom: -25%;
+											width: 75px;
+											height: 2px;
+											background: rgb(25, 134, 157);
+											transform: rotate(42deg);
+										}
+										&:after {
+											position: absolute;
+											content: "";
+											width: 30px;
+											height: 30px;
+											border: 2px solid rgb(25, 134, 157);
+											border-radius: 50%;
+											right: -20%;
+											bottom: -70%;
+										}
+									}
+									&:nth-of-type(2){
+										&:before {
+											position: absolute;
+											content: "";
+											width: 22px;
+											height: 2px;
+											background: rgb(25, 134, 157);
+											top: 98%;
+											right: -3%;
+										}
+										&:after {
+											position: absolute;
+											content: "";
+											width: 30px;
+											height: 30px;
+											border-radius: 50%;
+											border: 2px solid rgb(25, 134, 157);
+											top: 85%;
+											right: -11%;
+										}
+									}
+									&:last-of-type {
+										&:before {
+											position: absolute;
+											content: "";
+											width: 30px;
+											height: 30px;
+											border-radius: 50%;
+											border: 2px solid rgb(25, 134, 157);
+											top: 22%;
+											right: -20%;
+										}
+										&:after {
+											position: absolute;
+											content: "";
+											width: 80px;
+											height: 2px;
+											background: rgb(25, 134, 157);
+											top: 71%;
+											right: -16%;
+											transform: rotate(-45deg);
+										}
+									}
 								}
 							}
 							&:last-of-type {
 								.core-content {
+									position: relative;
 									.core-desc {}
 									.core-bottom {
 										&:before {
@@ -526,6 +593,14 @@
 											width: 30px;
 											height: 30px;
 											top: -650%;
+										}
+									}
+									&:first-of-type {
+										&:before {
+											position: absolute;
+											content: "hi";
+											left: 0;
+											top: 0;
 										}
 									}
 								}
